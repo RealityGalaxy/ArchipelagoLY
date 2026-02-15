@@ -1,0 +1,101 @@
+
+DAYS:
+day1 - nothing
+day2 - nothing
+day3 - nothing
+day4 - nothing
+day5 - nothing
+day6 - wanderers
+day7 - cave region
+day8 - cave region
+day9 - magma region
+day10 - magma region
+day11 - magma region
+day12 - magma region
+day13 - keep region
+day14 - keep region
+day15 - keep region
+day16 - drill region + blue + spikes
+day17 - drill region + blue + spikes || cold region + purple + blue => (drill region || cold region) + blue
+day18 - caves region + purple
+day19 - caves region + purple + spikes
+day20 - caves region + blue
+day21 - keep region + blue
+day22 - caves region + spikes
+day23 - caves region + purple + blue
+day24 - cold region
+day25 - cold region + purple
+day26 - cold region + purple
+day27 - cold region + purple + blue
+day28 - cold region + purple + blue
+
+WANDERERS: (all require "wanderers" item)
+start region 1 - wanderers
+cave entrance 1-5 - wanderers
+magma room 1-2 - magma region
+keep heart room 1-10 - keep region
+keep hallway 1-3 - keep region
+keep chamber 1-2 - keep region + purple
+keep vents 1-2 - keep region
+snowman? - cold region
+secret room 1-4 - drill region + yellow + blue
+
+CHECKPOINTS:
+- start region:
+-- Checkpoint in Starting Cave - nothing
+
+- cave region:
+-- Checkpoint obscured above Cold Region - cave region + spikes
+-- Checkpoint before Magma Room - cave region
+
+- keep region:
+-- Checkpoint before Keep Chamber - keep region
+-- Checkpoint in Keep Chamber - keep region + purple
+-- Checkpoint below Platform Tower - keep region
+
+- drill region:
+-- Checkpoint above Day 4 - drill region
+-- Checkpoint past Factory - drill region
+-- Checkpoint at Drill - drill region
+-- Checkpoint near Start of Underground Temple - drill region + blue
+-- Checkpoint after Spike Stairs in Underground Temple - drill region + blue
+
+-- Checkpoint Right of Day 16 - drill region + blue + spikes || cold region + purple + blue => (drill region || cold region) + blue
+
+
+- Cold region:
+-- Checkpoint Beside Snowman - cold region
+-- Checkpoint in Very Spiky Room in Cold Region - cold region
+-- Checkpoint after Long Drill in Cold Region - cold region + blue
+-- Checkpoint in Arrow Room in Cold Region - cold region + blue  
+
+- End region
+-- Checkpoint before Vents - end region
+-- Checkpoint before End Gate - end region
+
+- Yellow Region
+-- Checkpoint Hanging above the Void - yellow region
+-- Checkpoint at start of Day 29 Cave - yellow region
+-- Checkpoint Top of Second Room in Day 29 Cave - yellow region
+-- Checkpoint in Cutout in Third Room of Day 29 Cave - yellow region
+-- Checkpoint on Platform in Third Room of Day 29 Cave - yellow region
+-- Checkpoint in Ceiling Tunnel of Day 29 Cave - yellow region
+
+
+
+REGIONS:
+start region - no logic applied
+caves region - wanderers and cave key
+drill region - purple and drill key
+magma region - caves region, magma key
+cold region - caves region, cold key, spikes
+keep region - caves region, keep key
+end region - caves region, purple, spikes
+yellow region - end region + yellow + blue
+
+
+
+
+
+
+yellow - not include unless 29 normal or secret + wanderers enabled
